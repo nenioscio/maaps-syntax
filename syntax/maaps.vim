@@ -44,7 +44,7 @@ syn match   maapsName1        "[A-Za-z\._ \"]\+" nextgroup=maapsName2,maapsEntry
 syn match   maapsName2        "[A-Za-z\._ \"]\+" nextgroup=maapsEntryBlock contained skipwhite
 
 syn keyword maapsChainKeyword chain nextgroup=maapsChainname skipwhite
-syn match   maapsChainName    "[A-Za-z\.]\+" nextgroup=maapsChainBlock contained skipwhite
+syn match   maapsChainName    "[A-Za-z\._]\+" nextgroup=maapsChainBlock contained skipwhite
 
 syn keyword maapsImportKeyword import nextgroup=maapsImportName
 syn match   maapsImportName    "[A-Za-z\._]\+" contained skipwhite
